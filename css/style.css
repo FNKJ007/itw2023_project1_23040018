@@ -1,0 +1,375 @@
+/* style utama */
+body {
+  font-family: 'monserrat', sans-serif;
+  overflow-x: hidden;
+  background-color: #dcc167;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.014);
+  z-index: 50;
+}
+nav {
+  display: flex;
+  background-color: rgb(218, 159, 32);
+  justify-content: space-around;
+  padding: 20px;
+  height: 50px;
+  align-items: center;
+  box-shadow: 0 5px 5px rgba(30, 30, 30, 0.3);
+  z-index: 999;
+}
+nav .logo {
+  font: bold;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 40px;
+  letter-spacing: 4px;
+  position: relative;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+nav ul li a {
+  background-color: rgb(218, 159, 32);
+  text-decoration: none;
+  font-size: 1.2em;
+  color: rgb(63, 47, 17);
+  font: bold;
+}
+
+nav ul li a:hover {
+  color: rgb(235, 202, 131);
+  text-decoration: underline;
+}
+/* akhir navbar */
+
+/* profil */
+.profil {
+  text-align: center;
+  animation: fadeInAnimation ease 3s;
+  background-color: #dcc167;
+}
+.profil img {
+  border-radius: 50%;
+  margin-top: 150px;
+  border: 4px solid rgb(218, 159, 32);
+  cursor: pointer;
+}
+.profil img:hover {
+  transform: scale(1.1);
+}
+.profil h2 {
+  margin-top: 15px;
+  font-size: 2em;
+}
+
+.profil p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.profil:target img {
+  animation: fadeInAnimation 1s;
+}
+
+/* hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #dcc167;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 1;
+}
+
+nav ul.slide {
+  transform: translateX(0);
+}
+
+/* about */
+.about {
+  text-align: center;
+  background-color: #dcc167;
+  animation: fadeInAnimation ease 3s;
+}
+.about h2 {
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+.about p {
+  text-align: center;
+  font-family: 'Kalnia', serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.gambar img {
+  box-shadow: 4px 4px 5px -3px rgba(59, 49, 49, 0.61);
+  border-radius: 5%;
+  transition: 0.4s ease-in-out;
+}
+.gambar img:hover {
+  transform: scale(1.1);
+}
+
+.gambar:target img {
+  animation: fadeInAnimation 1s;
+}
+
+/* gallery */
+.gal {
+  background-color: #dcc167;
+  animation: fadeInAnimation ease 3s;
+}
+
+.gal li img {
+  box-shadow: 4px 4px 5px -3px rgba(59, 49, 49, 0.61);
+  border-radius: 5%;
+  transition: 0.4s ease-in-out;
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.gal li img:hover {
+  transform: scale(1.1);
+}
+.gal h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.contain {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.gal:target img {
+  animation: fadeInAnimation 1s;
+}
+
+/* hobby */
+.hobby {
+  background-color: #dcc167;
+  animation: fadeInAnimation ease 3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
+.hobby h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.hobby .image {
+  display: flex;
+}
+
+.hobby ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hobby li {
+  margin: 10px;
+}
+
+.hobby li img {
+  box-shadow: 4px 4px 5px -3px black;
+  border-radius: 5%;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.image li img:hover {
+  transform: scale(1.1);
+}
+
+/* contact */
+.contact {
+  padding: 70px 0;
+  background-color: #dcc167;
+  margin-top: 30px;
+}
+.contact h2 {
+  margin-top: 30px;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 3em;
+}
+.contact__inner {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 auto 20px;
+  color: var(--dark-blue);
+  max-width: 300px;
+}
+.contact__button {
+  font-weight: 400;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: black;
+  padding: 8px 23px;
+  background-color: #dcc167;
+  border-radius: 50px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 4px 5px -3px black;
+}
+.contact__button:hover {
+  transform: translateY(-3px);
+}
+
+.contact-form {
+  background-color: rgb(219, 173, 76);
+  width: 1200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(30, 30, 30, 0.3);
+  margin: auto;
+}
+.contact-form h2 {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 60px;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
+.contact-form h4 {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
+.contact-form input {
+  width: 290px;
+  height: 40px;
+  text-align: center;
+  border-bottom: 2px;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 2px solid var(--dark-grey);
+  text-decoration: underline;
+}
+.contact-form textarea {
+  width: 400px;
+  height: 100px;
+  box-shadow: 0 5px 5px rgba(30, 30, 30, 0.3);
+}
+
+.contact-form .field,
+.contact-form .field {
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.contact__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+.footer {
+  padding: 10px 0;
+  background-color: #dcc167;
+  margin-top: 40px;
+  margin-bottom: -100px;
+}
+.footer__inner {
+  text-align: center;
+}
+.footer__cooper {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: var(--blue);
+}
+
+.contact-form .field,
+.contact-form .field {
+  margin-left: 25px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,122 @@
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 80%;
+  }
+
+  .gal ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gal ul img {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .about .gambar img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .hobby ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hobby ul img {
+    width: auto;
+    flex-direction: column;
+  }
+  .contact {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form {
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+    z-index: 1;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(218, 159, 32);
+    z-index: 1;
+    transform: translateX(100%);
+    transition: all 1s;
+    overflow: hidden;
+  }
+  .gal ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gal ul img {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .about .gambar img {
+    display: flex;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+  }
+
+  .hobby ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hobby ul img {
+    max-width: 100%;
+    height: auto;
+  }
+  .contact {
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form {
+    width: auto;
+    display: flex;
+    left: 50px;
+    align-items: center;
+  }
+  .contact-form textarea {
+    width: 250px;
+    height: 70px;
+  }
+
+  .contact-form .field {
+    width: fit-content;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
