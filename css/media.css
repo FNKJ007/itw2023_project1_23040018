@@ -20,6 +20,10 @@
     margin: auto;
   }
 
+  .about p {
+    text-align: center;
+  }
+
   .hobby ul {
     display: flex;
     flex-direction: column;
@@ -57,7 +61,7 @@
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(218, 159, 32);
+    background-color: #4bbba7;
     z-index: 1;
     transform: translateX(100%);
     transition: all 1s;
@@ -78,6 +82,10 @@
     max-width: 50%;
     height: auto;
     margin: auto;
+  }
+
+  .about p {
+    text-align: center;
   }
 
   .hobby ul {
